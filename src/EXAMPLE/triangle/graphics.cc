@@ -113,7 +113,7 @@ bool Graphics::render()
 	bool result;
 	D3DXMATRIX worldMatrix, viewMatrix, projectionMatrix;
 
-	m_D3D->beginScene(1.0f, 0.0f, 0.0f, 1.0f);
+	m_D3D->beginScene(0.0f, 0.0f, 0.4f, 1.0f);
 
 	m_Camera->render(); 
 
