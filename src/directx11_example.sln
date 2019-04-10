@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "first_window", "EXAMPLE\fir
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "triangle", "EXAMPLE\triangle\triangle.vcxproj", "{FFDA5B19-6458-408E-B226-EB5EE2F91283}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "texture", "EXAMPLE\texture\texture.vcxproj", "{54B3A7C1-FC4B-4C9A-A129-0AEBFBF1F129}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{FFDA5B19-6458-408E-B226-EB5EE2F91283}.Release|x64.Build.0 = Release|x64
 		{FFDA5B19-6458-408E-B226-EB5EE2F91283}.Release|x86.ActiveCfg = Release|Win32
 		{FFDA5B19-6458-408E-B226-EB5EE2F91283}.Release|x86.Build.0 = Release|Win32
+		{54B3A7C1-FC4B-4C9A-A129-0AEBFBF1F129}.Debug|x64.ActiveCfg = Debug|x64
+		{54B3A7C1-FC4B-4C9A-A129-0AEBFBF1F129}.Debug|x64.Build.0 = Debug|x64
+		{54B3A7C1-FC4B-4C9A-A129-0AEBFBF1F129}.Debug|x86.ActiveCfg = Debug|Win32
+		{54B3A7C1-FC4B-4C9A-A129-0AEBFBF1F129}.Debug|x86.Build.0 = Debug|Win32
+		{54B3A7C1-FC4B-4C9A-A129-0AEBFBF1F129}.Release|x64.ActiveCfg = Release|x64
+		{54B3A7C1-FC4B-4C9A-A129-0AEBFBF1F129}.Release|x64.Build.0 = Release|x64
+		{54B3A7C1-FC4B-4C9A-A129-0AEBFBF1F129}.Release|x86.ActiveCfg = Release|Win32
+		{54B3A7C1-FC4B-4C9A-A129-0AEBFBF1F129}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
