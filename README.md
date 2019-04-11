@@ -2,4 +2,6 @@
 
 This repository contains the example code for the DirectX 11.
 
-reference : https://ppparkje.tistory.com/ 
+### reference
+- http://www.rastertek.com/tutdx11.html
+- https://ppparkje.tistory.com/

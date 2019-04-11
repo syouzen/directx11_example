@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light", "EXAMPLE\light\ligh
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cube", "EXAMPLE\cube\cube.vcxproj", "{5F3F752A-417C-49E3-9F4A-41D8E5AA3B52}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ambient", "EXAMPLE\ambient\ambient.vcxproj", "{D572B7A5-676E-4A57-B453-4DC431426BA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{5F3F752A-417C-49E3-9F4A-41D8E5AA3B52}.Release|x64.Build.0 = Release|x64
 		{5F3F752A-417C-49E3-9F4A-41D8E5AA3B52}.Release|x86.ActiveCfg = Release|Win32
 		{5F3F752A-417C-49E3-9F4A-41D8E5AA3B52}.Release|x86.Build.0 = Release|Win32
+		{D572B7A5-676E-4A57-B453-4DC431426BA0}.Debug|x64.ActiveCfg = Debug|x64
+		{D572B7A5-676E-4A57-B453-4DC431426BA0}.Debug|x64.Build.0 = Debug|x64
+		{D572B7A5-676E-4A57-B453-4DC431426BA0}.Debug|x86.ActiveCfg = Debug|Win32
+		{D572B7A5-676E-4A57-B453-4DC431426BA0}.Debug|x86.Build.0 = Debug|Win32
+		{D572B7A5-676E-4A57-B453-4DC431426BA0}.Release|x64.ActiveCfg = Release|x64
+		{D572B7A5-676E-4A57-B453-4DC431426BA0}.Release|x64.Build.0 = Release|x64
+		{D572B7A5-676E-4A57-B453-4DC431426BA0}.Release|x86.ActiveCfg = Release|Win32
+		{D572B7A5-676E-4A57-B453-4DC431426BA0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
