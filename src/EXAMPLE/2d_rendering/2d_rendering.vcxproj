@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{66F0A77B-B4EC-4685-B07E-1537561816FC}</ProjectGuid>
-    <RootNamespace>specular</RootNamespace>
+    <ProjectGuid>{D5962E49-79F3-4B1E-92D0-F391C126D4EC}</ProjectGuid>
+    <RootNamespace>2d_rendering</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,6 @@
     <ClInclude Include="d3d.h" />
     <ClInclude Include="graphics.h" />
     <ClInclude Include="input.h" />
-    <ClInclude Include="light.h" />
     <ClInclude Include="model.h" />
     <ClInclude Include="shader.h" />
     <ClInclude Include="texture.h" />
@@ -138,7 +137,6 @@
     <ClCompile Include="d3d.cc" />
     <ClCompile Include="graphics.cc" />
     <ClCompile Include="input.cc" />
-    <ClCompile Include="light.cc" />
     <ClCompile Include="main.cc" />
     <ClCompile Include="model.cc" />
     <ClCompile Include="shader.cc" />

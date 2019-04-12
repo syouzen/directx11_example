@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ambient", "EXAMPLE\ambient\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "specular", "EXAMPLE\specular\specular.vcxproj", "{66F0A77B-B4EC-4685-B07E-1537561816FC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2d_rendering", "EXAMPLE\2d_rendering\2d_rendering.vcxproj", "{D5962E49-79F3-4B1E-92D0-F391C126D4EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{66F0A77B-B4EC-4685-B07E-1537561816FC}.Release|x64.Build.0 = Release|x64
 		{66F0A77B-B4EC-4685-B07E-1537561816FC}.Release|x86.ActiveCfg = Release|Win32
 		{66F0A77B-B4EC-4685-B07E-1537561816FC}.Release|x86.Build.0 = Release|Win32
+		{D5962E49-79F3-4B1E-92D0-F391C126D4EC}.Debug|x64.ActiveCfg = Debug|x64
+		{D5962E49-79F3-4B1E-92D0-F391C126D4EC}.Debug|x64.Build.0 = Debug|x64
+		{D5962E49-79F3-4B1E-92D0-F391C126D4EC}.Debug|x86.ActiveCfg = Debug|Win32
+		{D5962E49-79F3-4B1E-92D0-F391C126D4EC}.Debug|x86.Build.0 = Debug|Win32
+		{D5962E49-79F3-4B1E-92D0-F391C126D4EC}.Release|x64.ActiveCfg = Release|x64
+		{D5962E49-79F3-4B1E-92D0-F391C126D4EC}.Release|x64.Build.0 = Release|x64
+		{D5962E49-79F3-4B1E-92D0-F391C126D4EC}.Release|x86.ActiveCfg = Release|Win32
+		{D5962E49-79F3-4B1E-92D0-F391C126D4EC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
