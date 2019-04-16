@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "specular", "EXAMPLE\specula
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2d_rendering", "EXAMPLE\2d_rendering\2d_rendering.vcxproj", "{D5962E49-79F3-4B1E-92D0-F391C126D4EC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "text_engine", "EXAMPLE\text_engine\text_engine.vcxproj", "{DC0A9CBC-6125-44F9-BAA2-98703FE0CFC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{D5962E49-79F3-4B1E-92D0-F391C126D4EC}.Release|x64.Build.0 = Release|x64
 		{D5962E49-79F3-4B1E-92D0-F391C126D4EC}.Release|x86.ActiveCfg = Release|Win32
 		{D5962E49-79F3-4B1E-92D0-F391C126D4EC}.Release|x86.Build.0 = Release|Win32
+		{DC0A9CBC-6125-44F9-BAA2-98703FE0CFC1}.Debug|x64.ActiveCfg = Debug|x64
+		{DC0A9CBC-6125-44F9-BAA2-98703FE0CFC1}.Debug|x64.Build.0 = Debug|x64
+		{DC0A9CBC-6125-44F9-BAA2-98703FE0CFC1}.Debug|x86.ActiveCfg = Debug|Win32
+		{DC0A9CBC-6125-44F9-BAA2-98703FE0CFC1}.Debug|x86.Build.0 = Debug|Win32
+		{DC0A9CBC-6125-44F9-BAA2-98703FE0CFC1}.Release|x64.ActiveCfg = Release|x64
+		{DC0A9CBC-6125-44F9-BAA2-98703FE0CFC1}.Release|x64.Build.0 = Release|x64
+		{DC0A9CBC-6125-44F9-BAA2-98703FE0CFC1}.Release|x86.ActiveCfg = Release|Win32
+		{DC0A9CBC-6125-44F9-BAA2-98703FE0CFC1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
