@@ -131,7 +131,7 @@ bool Shader::initializeShader(ID3D11Device* device, HWND hwnd, const WCHAR* vsFi
 	numElements = sizeof(polygonLayout) / sizeof(polygonLayout[0]);
 
 	result = device->CreateInputLayout(polygonLayout, numElements, vertexShaderBuffer->GetBufferPointer(),
-		vertexShaderBuffer->GetBufferSize(), &m_layout);
+									   vertexShaderBuffer->GetBufferSize(), &m_layout);
 	if (FAILED(result))
 	{
 		return false;
@@ -268,11 +268,7 @@ bool Shader::setShaderParameters(ID3D11DeviceContext* deviceContext, D3DXMATRIX 
 	MatrixBufferType* dataPtr;
 	PixelBufferType* dataPtr2;
 	unsigned int bufferNumber;
-
-	D3DXMatrixTranspose(&worldMatrix, &worldMatrix);
-	D3DXMatrixTranspose(&viewMatrix, &viewMatrix);
-	D3DXMatrixTranspose(&projectionMatrix, &projectionMatrix);
-
+	
 	result = deviceContext->Map(m_matrixBuffer, 0, D3D11_MAP_WRITE_DISCARD, 0, &mappedResource);
 	if (FAILED(result))
 	{
@@ -280,6 +276,10 @@ bool Shader::setShaderParameters(ID3D11DeviceContext* deviceContext, D3DXMATRIX 
 	}
 
 	dataPtr = (MatrixBufferType*)mappedResource.pData;
+
+	D3DXMatrixTranspose(&worldMatrix, &worldMatrix);
+	D3DXMatrixTranspose(&viewMatrix, &viewMatrix);
+	D3DXMatrixTranspose(&projectionMatrix, &projectionMatrix);
 
 	dataPtr->world = worldMatrix;
 	dataPtr->view = viewMatrix;
@@ -290,8 +290,8 @@ bool Shader::setShaderParameters(ID3D11DeviceContext* deviceContext, D3DXMATRIX 
 	bufferNumber = 0;
 
 	deviceContext->VSSetConstantBuffers(bufferNumber, 1, &m_matrixBuffer);
-	deviceContext->PSSetShaderResources(0, 1, &texture); return true;
-
+	deviceContext->PSSetShaderResources(0, 1, &texture); 
+	
 	result = deviceContext->Map(m_pixelBuffer, 0, D3D11_MAP_WRITE_DISCARD, 0, &mappedResource); 
 	if (FAILED(result))
 	{

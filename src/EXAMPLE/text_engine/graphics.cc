@@ -93,12 +93,10 @@ bool Graphics::render()
 	m_Camera->render(); 
 
 	m_Camera->getViewMatrix(viewMatrix); 
-
-	m_D3D->getWorldMatrix(worldMatrix); 
-	m_D3D->getProjectionMatrix(projectionMatrix); 	
-	
-	/* 2D Rendering */
+	m_D3D->getWorldMatrix(worldMatrix);
+	m_D3D->getProjectionMatrix(projectionMatrix);
 	m_D3D->getOrthoMatrix(orthoMatrix);
+
 	m_D3D->turnZBufferOff();
 
 	/* Alpha Blending */

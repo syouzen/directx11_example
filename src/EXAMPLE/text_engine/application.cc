@@ -95,6 +95,11 @@ void Application::run()
 				done = true;
 			}
 		}
+
+		if (m_Input->isKeyDown(VK_ESCAPE))
+		{
+			done = true;
+		}
 	}
 
 	return;
@@ -104,11 +109,6 @@ bool Application::frame()
 {
 	bool result;
 	
-	if (m_Input->isKeyDown(VK_ESCAPE))
-	{
-		return false;
-	}
-
 	m_Graphics->frame();
 	result = m_Graphics->render();
 	if (!result)
@@ -192,16 +192,32 @@ void Application::initializeWindows(int& screenWidth, int& screenHeight)
 	}
 
 	m_hwnd = CreateWindowEx(WS_EX_APPWINDOW, m_applicationName, m_applicationName,
-		WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_POPUP,
-		posX, posY, screenWidth, screenHeight, NULL, NULL, m_hinstance, NULL);
+							WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_POPUP,
+							posX, posY, screenWidth, screenHeight, NULL, NULL, m_hinstance, NULL);
 
 	ShowWindow(m_hwnd, SW_SHOW);
 	SetForegroundWindow(m_hwnd);
 	SetFocus(m_hwnd);
 
 	ShowCursor(false);
+}
 
-	return;
+void Application::shutdownWindows()
+{
+	ShowCursor(true);
+
+	if (FULL_SCREEN)
+	{
+		ChangeDisplaySettings(NULL, 0);
+	}
+
+	DestroyWindow(m_hwnd);
+	m_hwnd = NULL;
+
+	UnregisterClass(m_applicationName, m_hinstance);
+	m_hinstance = NULL;
+
+	applicationHandle = NULL;
 }
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT umessage, WPARAM wparam, LPARAM lparam)

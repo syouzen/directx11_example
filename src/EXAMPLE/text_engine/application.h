@@ -24,7 +24,7 @@ public:
 private:
 	bool frame();
 	void initializeWindows(int&, int&);
-	void shutdownWindows() {}
+	void shutdownWindows();
 
 private:
 	LPCWSTR m_applicationName;
