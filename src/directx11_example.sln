@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "text_engine", "EXAMPLE\text
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "direct_input", "EXAMPLE\direct_input\direct_input.vcxproj", "{873B0F4A-4B34-4C2C-9FB8-A16975B3E0D5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "direct_sound", "EXAMPLE\direct_sound\direct_sound.vcxproj", "{3E8BEE9A-73D5-48A9-BE58-196253DDB09B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{873B0F4A-4B34-4C2C-9FB8-A16975B3E0D5}.Release|x64.Build.0 = Release|x64
 		{873B0F4A-4B34-4C2C-9FB8-A16975B3E0D5}.Release|x86.ActiveCfg = Release|Win32
 		{873B0F4A-4B34-4C2C-9FB8-A16975B3E0D5}.Release|x86.Build.0 = Release|Win32
+		{3E8BEE9A-73D5-48A9-BE58-196253DDB09B}.Debug|x64.ActiveCfg = Debug|x64
+		{3E8BEE9A-73D5-48A9-BE58-196253DDB09B}.Debug|x64.Build.0 = Debug|x64
+		{3E8BEE9A-73D5-48A9-BE58-196253DDB09B}.Debug|x86.ActiveCfg = Debug|Win32
+		{3E8BEE9A-73D5-48A9-BE58-196253DDB09B}.Debug|x86.Build.0 = Debug|Win32
+		{3E8BEE9A-73D5-48A9-BE58-196253DDB09B}.Release|x64.ActiveCfg = Release|x64
+		{3E8BEE9A-73D5-48A9-BE58-196253DDB09B}.Release|x64.Build.0 = Release|x64
+		{3E8BEE9A-73D5-48A9-BE58-196253DDB09B}.Release|x86.ActiveCfg = Release|Win32
+		{3E8BEE9A-73D5-48A9-BE58-196253DDB09B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
