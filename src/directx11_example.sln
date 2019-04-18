@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "direct_sound", "EXAMPLE\dir
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "config", "EXAMPLE\config\config.vcxproj", "{AE488381-A068-4117-841A-6FC40E413A4E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "frustum_culling", "EXAMPLE\frustum_culling\frustum_culling.vcxproj", "{0668ED33-260E-440D-841C-A01344B62AAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{AE488381-A068-4117-841A-6FC40E413A4E}.Release|x64.Build.0 = Release|x64
 		{AE488381-A068-4117-841A-6FC40E413A4E}.Release|x86.ActiveCfg = Release|Win32
 		{AE488381-A068-4117-841A-6FC40E413A4E}.Release|x86.Build.0 = Release|Win32
+		{0668ED33-260E-440D-841C-A01344B62AAF}.Debug|x64.ActiveCfg = Debug|x64
+		{0668ED33-260E-440D-841C-A01344B62AAF}.Debug|x64.Build.0 = Debug|x64
+		{0668ED33-260E-440D-841C-A01344B62AAF}.Debug|x86.ActiveCfg = Debug|Win32
+		{0668ED33-260E-440D-841C-A01344B62AAF}.Debug|x86.Build.0 = Debug|Win32
+		{0668ED33-260E-440D-841C-A01344B62AAF}.Release|x64.ActiveCfg = Release|x64
+		{0668ED33-260E-440D-841C-A01344B62AAF}.Release|x64.Build.0 = Release|x64
+		{0668ED33-260E-440D-841C-A01344B62AAF}.Release|x86.ActiveCfg = Release|Win32
+		{0668ED33-260E-440D-841C-A01344B62AAF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
