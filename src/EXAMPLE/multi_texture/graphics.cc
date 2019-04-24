@@ -48,7 +48,7 @@ bool Graphics::initialize(int screenWidth, int screenHeight, HWND hwnd)
 		return false; 
 	} 
 	
-	result = m_Model->initialize(m_D3D->getDevice(), L"stone01.dds", L"dirt01.dds"); 
+	result = m_Model->initialize(m_D3D->getDevice(), "square.txt", L"stone01.dds", L"dirt01.dds"); 
 	if(!result) 
 	{ 
 		MessageBox(hwnd, L"Could not initialize the model object.", L"Error", MB_OK); 

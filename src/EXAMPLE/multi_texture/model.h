@@ -5,6 +5,10 @@
 #include <d3d11.h> 
 #include <d3dx10math.h>
 
+#include <fstream>
+
+using namespace std;
+
 class Model
 {
 private:
@@ -13,6 +17,13 @@ private:
 		D3DXVECTOR3 position; 
 		D3DXVECTOR2 texture;
 	};
+	
+	struct ModelType
+	{
+		float x, y, z;
+		float tu, tv;
+		float nx, ny, nz;
+	};
 
 public:
 	Model();
@@ -20,7 +31,7 @@ public:
 	~Model();
 
 public:
-	bool initialize(ID3D11Device*, const WCHAR*, const WCHAR*);
+	bool initialize(ID3D11Device*, const char*, const WCHAR*, const WCHAR*);
 	void shutdown();
 	void render(ID3D11DeviceContext*);
 
@@ -35,8 +46,12 @@ private:
 	bool loadTexture(ID3D11Device*, const WCHAR*, const WCHAR*); 
 	void releaseTextures();
 
+	bool loadModel(const char*);
+	void releaseModel();
+
 private: 
 	ID3D11Buffer * m_vertexBuffer, *m_indexBuffer; 
 	int m_vertexCount, m_indexCount;
 	TextureArray* m_TextureArray;
+	ModelType* m_model;
 };

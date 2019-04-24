@@ -5,6 +5,7 @@ Model::Model()
 	m_vertexBuffer = 0;
 	m_indexBuffer = 0;
 	m_TextureArray = 0;
+	m_model = 0;
 }
 
 Model::Model(const Model& other)
@@ -15,9 +16,15 @@ Model::~Model()
 {
 }
 
-bool Model::initialize(ID3D11Device* device, const WCHAR* textureFilename, const WCHAR* textureFilename2)
+bool Model::initialize(ID3D11Device* device, const char* modelFilename, const WCHAR* textureFilename, const WCHAR* textureFilename2)
 {
 	bool result;
+
+	result = loadModel(modelFilename);
+	if (!result)
+	{
+		return false;
+	}
 
 	result = initializeBuffers(device);
 	if (!result)
@@ -62,10 +69,7 @@ bool Model::initializeBuffers(ID3D11Device* device)
 	D3D11_BUFFER_DESC vertexBufferDesc, indexBufferDesc;
 	D3D11_SUBRESOURCE_DATA vertexData, indexData;
 	HRESULT result;
-
-	m_vertexCount = 3;
-	m_indexCount = 3;
-
+	
 	vertices = new VertexType[m_vertexCount];
 	if (!vertices)
 	{
@@ -78,18 +82,14 @@ bool Model::initializeBuffers(ID3D11Device* device)
 		return false;
 	}
 
-	vertices[0].position = D3DXVECTOR3(-1.0f, -1.0f, 0.0f);
-	vertices[0].texture = D3DXVECTOR2(0.0f, 1.0f);
+	for (int i = 0; i<m_vertexCount; i++)
+	{
+		vertices[i].position = D3DXVECTOR3(m_model[i].x, m_model[i].y, m_model[i].z);
+		vertices[i].texture = D3DXVECTOR2(m_model[i].tu, m_model[i].tv);
 
-	vertices[1].position = D3DXVECTOR3(0.0f, 1.0f, 0.0f);
-	vertices[1].texture = D3DXVECTOR2(0.5f, 0.0f);
+		indices[i] = i;
+	}
 
-	vertices[2].position = D3DXVECTOR3(1.0f, -1.0f, 0.0f);
-	vertices[2].texture = D3DXVECTOR2(1.0f, 1.0f);
-
-	indices[0] = 0;  
-	indices[1] = 1;  
-	indices[2] = 2;
 
 	vertexBufferDesc.Usage = D3D11_USAGE_DEFAULT;
 	vertexBufferDesc.ByteWidth = sizeof(VertexType) * m_vertexCount;
@@ -188,5 +188,63 @@ void Model::releaseTextures()
 		m_TextureArray->shutdown();
 		delete m_TextureArray;
 		m_TextureArray = 0;
+	}
+}
+
+bool Model::loadModel(const char* filename)
+{
+	ifstream fin;
+	char input;
+	int i;
+
+	fin.open(filename);
+
+	if (fin.fail())
+	{
+		return false;
+	}
+
+	fin.get(input);
+	while (input != ':')
+	{
+		fin.get(input);
+	}
+
+	fin >> m_vertexCount;
+
+	m_indexCount = m_vertexCount;
+
+	m_model = new ModelType[m_vertexCount];
+	if (!m_model)
+	{
+		return false;
+	}
+
+	fin.get(input);
+	while (input != ':')
+	{
+		fin.get(input);
+	}
+	fin.get(input);
+	fin.get(input);
+
+	for (i = 0; i<m_vertexCount; i++)
+	{
+		fin >> m_model[i].x >> m_model[i].y >> m_model[i].z;
+		fin >> m_model[i].tu >> m_model[i].tv;
+		fin >> m_model[i].nx >> m_model[i].ny >> m_model[i].nz;
+	}
+
+	fin.close();
+
+	return true;
+}
+
+void Model::releaseModel()
+{
+	if (m_model)
+	{
+		delete[] m_model;
+		m_model = 0;
 	}
 }
