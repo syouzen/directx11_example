@@ -1,0 +1,27 @@
+#pragma once
+
+#include <d3dx10math.h>
+
+class Light 
+{ 
+public: 
+	Light(); 
+	Light(const Light&); 
+	~Light(); 
+	
+	void setDiffuseColor(float, float, float, float); 
+	void setDirection(float, float, float); 	
+	void setSpecularColor(float, float, float, float);
+	void setSpecularPower(float);
+
+	D3DXVECTOR4 getDiffuseColor();
+	D3DXVECTOR3 getDirection();
+	D3DXVECTOR4 getSpecularColor();
+	float getSpecularPower();
+
+private: 
+	D3DXVECTOR4 m_diffuseColor; 
+	D3DXVECTOR3 m_direction; 
+	D3DXVECTOR4 m_specularColor;
+	float m_specularPower;
+};
