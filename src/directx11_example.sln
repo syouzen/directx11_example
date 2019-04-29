@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "normalmap", "EXAMPLE\normal
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "specularmap", "EXAMPLE\specularmap\specularmap.vcxproj", "{D92713E3-414B-474C-994D-403F651E1F9B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "render_to_texture", "EXAMPLE\render_to_texture\render_to_texture.vcxproj", "{756D4925-5B23-4C01-A5B1-1F67A2CCA7A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -191,6 +193,14 @@ Global
 		{D92713E3-414B-474C-994D-403F651E1F9B}.Release|x64.Build.0 = Release|x64
 		{D92713E3-414B-474C-994D-403F651E1F9B}.Release|x86.ActiveCfg = Release|Win32
 		{D92713E3-414B-474C-994D-403F651E1F9B}.Release|x86.Build.0 = Release|Win32
+		{756D4925-5B23-4C01-A5B1-1F67A2CCA7A3}.Debug|x64.ActiveCfg = Debug|x64
+		{756D4925-5B23-4C01-A5B1-1F67A2CCA7A3}.Debug|x64.Build.0 = Debug|x64
+		{756D4925-5B23-4C01-A5B1-1F67A2CCA7A3}.Debug|x86.ActiveCfg = Debug|Win32
+		{756D4925-5B23-4C01-A5B1-1F67A2CCA7A3}.Debug|x86.Build.0 = Debug|Win32
+		{756D4925-5B23-4C01-A5B1-1F67A2CCA7A3}.Release|x64.ActiveCfg = Release|x64
+		{756D4925-5B23-4C01-A5B1-1F67A2CCA7A3}.Release|x64.Build.0 = Release|x64
+		{756D4925-5B23-4C01-A5B1-1F67A2CCA7A3}.Release|x86.ActiveCfg = Release|Win32
+		{756D4925-5B23-4C01-A5B1-1F67A2CCA7A3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
