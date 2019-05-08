@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "translate_texture", "EXAMPL
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "transparent", "EXAMPLE\transparent\transparent.vcxproj", "{61F482D5-AB90-485A-B87F-D4751D8C3941}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "reflection", "EXAMPLE\reflection\reflection.vcxproj", "{3F32AA12-E6C3-4E66-B740-01C1533F362B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -241,6 +243,14 @@ Global
 		{61F482D5-AB90-485A-B87F-D4751D8C3941}.Release|x64.Build.0 = Release|x64
 		{61F482D5-AB90-485A-B87F-D4751D8C3941}.Release|x86.ActiveCfg = Release|Win32
 		{61F482D5-AB90-485A-B87F-D4751D8C3941}.Release|x86.Build.0 = Release|Win32
+		{3F32AA12-E6C3-4E66-B740-01C1533F362B}.Debug|x64.ActiveCfg = Debug|x64
+		{3F32AA12-E6C3-4E66-B740-01C1533F362B}.Debug|x64.Build.0 = Debug|x64
+		{3F32AA12-E6C3-4E66-B740-01C1533F362B}.Debug|x86.ActiveCfg = Debug|Win32
+		{3F32AA12-E6C3-4E66-B740-01C1533F362B}.Debug|x86.Build.0 = Debug|Win32
+		{3F32AA12-E6C3-4E66-B740-01C1533F362B}.Release|x64.ActiveCfg = Release|x64
+		{3F32AA12-E6C3-4E66-B740-01C1533F362B}.Release|x64.Build.0 = Release|x64
+		{3F32AA12-E6C3-4E66-B740-01C1533F362B}.Release|x86.ActiveCfg = Release|Win32
+		{3F32AA12-E6C3-4E66-B740-01C1533F362B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
