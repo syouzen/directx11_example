@@ -176,13 +176,11 @@ ID3D11ShaderResourceView* RenderTexture::getShaderResourceView()
 void RenderTexture::getProjectionMatrix(D3DXMATRIX& projectionMatrix)
 {
 	projectionMatrix = m_projectionMatrix;
-	return;
 }
 
 void RenderTexture::getOrthoMatrix(D3DXMATRIX& orthoMatrix)
 {
 	orthoMatrix = m_orthoMatrix;
-	return;
 }
 
 int RenderTexture::getTextureWidth()
